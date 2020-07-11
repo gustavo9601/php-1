@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+* {
+    /** Reiniciamos lo sestilso de todas las etiquetas */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9e9e9;
+    color: #2e2e2e;
+    font-family: Arial, helvetica, sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    min-width: 1000px;
+    margin: auto; /* centramos el contenido*/
+}
+
+h1 {
+    margin: 20px 0;
+    text-align: center;
+    font-family: "Oswald", helvetica, sans-serif;
+    font-weight: normal;
+    color: #ce7f08;
+}
+
+/*
+Contendor de articulos
+*/
+.contenedor .articulos {
+    margin-bottom: 20px;
+}
+
+.contenedor .articulos ul {
+    list-style: none;
+}
+
+.contenedor .articulos ul li {
+    padding: 15px 10px;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+/*
+Paginacion
+*/
+.paginacion ul {
+    list-style: none;
+}
+
+.paginacion ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.paginacion ul .active a {
+    background-color: #ce7f08;
+}
+
+.paginacion ul .disabled {
+    background-color: #c8c8c8;
+    display: inline-block;
+    font-family: "Oswald", helvetica, sans-serif;
+    padding: 15px 25px;
+    cursor: not-allowed; /*Bloquea la blechtita*/
+    color: #fff;
+    text-decoration: none;
+}
+
+.paginacion ul li a {
+    display: inline-block;
+    font-family: "Oswald", helvetica, sans-serif;
+    padding: 15px 25px;
+    background-color: #424242;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.paginacion ul li a:hover{
+    transition: all .3s ease;
+    text-decoration: none;
+    background-color: #3299bb;
+}
